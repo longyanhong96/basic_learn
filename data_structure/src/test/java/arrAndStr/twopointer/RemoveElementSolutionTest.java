@@ -14,7 +14,7 @@ public class RemoveElementSolutionTest extends TestCase {
 
 
     public void testRemoveElement() {
-        int[] nums = {2};
+        int[] nums = {0, 1, 2, 2, 3, 0, 4, 2};
         int element = RemoveElementSolution.removeElement(nums, 3);
 
         String string = Arrays.toString(nums);

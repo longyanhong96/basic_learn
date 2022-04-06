@@ -4,6 +4,8 @@
 
 ## algorithm 算法
 
+#### algorithmPlan 算法计划
+    https://leetcode-cn.com/study-plan/algorithms/?progress=l50j867
 
 
 
