@@ -1,12 +1,13 @@
+import junit.framework.TestCase;
+
 /**
  * @author longyh
  * @Description:
  * @analysis:
  * @date 2022/3/30 22:43
  */
-public class Test {
+public class Test extends TestCase {
 
-    @org.junit.Test
     public void test1() {
         int dept = 0;
         fun(dept);
@@ -22,5 +23,15 @@ public class Test {
         dept++;
         System.out.println("fun dept = " + dept);
         return dept;
+    }
+
+    public void test2() {
+        int i = 5 ^ 9 ;
+        System.out.println("i = " + i);
+    }
+
+    public void test3(){
+        int num = -11;
+        System.out.println("num/10 = " + num / 10);
     }
 }
