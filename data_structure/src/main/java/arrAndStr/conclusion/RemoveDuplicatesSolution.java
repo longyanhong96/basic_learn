@@ -7,17 +7,20 @@ package arrAndStr.conclusion;
  * @date 2022/4/2 3:15 下午
  */
 public class RemoveDuplicatesSolution {
-    public int removeDuplicates(int[] nums) {
+    public static int removeDuplicates(int[] nums) {
 
         int fast = 1;
-        int slow = 0;
+        int slow = 1;
 
         for (; fast < nums.length; fast++) {
-            if (nums[fast] != nums[slow]){
-
+            if (nums[fast - 1] != nums[fast]) {
+                if (slow != fast) {
+                    nums[slow] = nums[fast];
+                }
+                slow++;
             }
         }
 
-        return 0;
+        return slow;
     }
 }

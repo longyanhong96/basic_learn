@@ -10,24 +10,23 @@ import algorithmPlan.ListNode;
  */
 public class RemoveNthFromEndSolution {
     public static ListNode removeNthFromEnd(ListNode head, int n) {
-        ListNode slow = head;
+        ListNode prev = null;
+        ListNode current = head;
         ListNode fast = head;
         for (int i = 0; i < n; i++) {
             fast = fast.next;
         }
 
-        while (fast != null && fast.next != null) {
-            slow = slow.next;
+        while (fast != null) {
+            prev = current;
+            current = current.next;
             fast = fast.next;
         }
 
-        if (n == 1) {
-            if (head.next == null) {
-                return null;
-            }
-            slow.next = null;
+        if (prev == null) {
+            head = current.next;
         } else {
-            slow.next = fast;
+            prev.next = current.next;
         }
 
         return head;
