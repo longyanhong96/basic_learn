@@ -1,12 +1,8 @@
-package rpc;
+package com.lyh.rpc;
 
 import bean.Score;
-import bean.User;
 
 import java.io.*;
-import java.net.InetSocketAddress;
-import java.net.Socket;
-import java.nio.charset.StandardCharsets;
 
 /**
  * @author longyh

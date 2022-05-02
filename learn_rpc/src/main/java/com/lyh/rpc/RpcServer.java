@@ -1,13 +1,10 @@
-package rpc;
+package com.lyh.rpc;
 
-import bean.User;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.*;
-import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
 import java.net.ServerSocket;
 import java.net.Socket;
 

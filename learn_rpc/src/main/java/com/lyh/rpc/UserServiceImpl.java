@@ -1,4 +1,4 @@
-package rpc;
+package com.lyh.rpc;
 
 import bean.Score;
 import bean.User;
